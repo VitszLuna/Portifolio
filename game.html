@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jogo da Memória - Divas Pop</title>
+  <link rel="stylesheet" href="ctyle.css" />
+  <script defer src="jogo.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="navegacao">
+      <a href="index.html">PORTIFOLIO</a>
+      <a href="game.html">JOGO</a>
+      <a href="contato.html">CONTATO</a>
+    </div>
+    <div class="search">
+      <input type="text" placeholder="Pesquisar..." />
+      <button>Buscar</button>
+    </div>
+  </nav>
+
+  <form class="login-form">
+    <input type="text" placeholder="Digite seu nome" class="login__input" required />
+    <button type="submit" class="login__button" disabled>Iniciar Jogo</button>
+  </form>
+
+  <main style="display: none;">
+    <header>
+      <span class="player"></span>
+      <span>Tempo: <span class="timer">00</span></span>
+    </header>
+    <div class="grid"></div>
+    <button class="reiniciar-btn" onclick="reiniciarPagina()">Reiniciar</button>
+  </main>
+
+  <script>
+    function reiniciarPagina() {
+      location.reload();
+    }
+  </script>
+</body>
+</html>

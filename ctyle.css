@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+nav {
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 8px;
+    margin-bottom: 24px;
+  }
+  
+  .navegacao {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .navegacao a {
+    color: rgb(206, 64, 151);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+  }
+  
+  .navegacao a:hover {
+    text-decoration: underline;
+    color: black;
+  }
+  
+  .search {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .search input {
+    padding: 6px;
+    border: none;
+    border-radius: 4px;
+    color: black;
+    width: 150px;
+  }
+  
+  .search button {
+    padding: 6px 12px;
+    margin-left: 5px;
+    background-color: rgb(206, 64, 151);
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  .search button:hover {
+    background: #e6a8ce;
+  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  border: none;
+  font-family: 'Press Start 2P', cursive;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+.login-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  background-image: url('img/inicial.png'); 
+  background-size: cover;
+  background-position: center;
+}
+
+.login__header {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.login__header img {
+  width: 250px;
+}
+
+.login__header h1 {
+  color: #CA585D;
+  font-size: 1.5em;
+}
+
+.login__input {
+  border: 2px solid #CA585D;
+  border-radius: 8px;
+  color: #CA585D;
+  font-size: 1em;
+  margin-bottom: 15px;
+  max-width: 300px;
+  outline: none;
+  padding: 15px;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+.login__button {
+  background-color: #CA585D;
+  border: 4px solid #EFCBDA;
+  border-radius: 8px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1em;
+  max-width: 300px;
+  padding: 15px;
+  width: 100%;
+}
+
+.voltar {
+  background-color: transparent;
+  border: none;
+  color: #CA585D;
+  cursor: pointer;
+}
+
+.login__button:disabled {
+  background-color: #eee;
+  border: 2px solid #969595;
+  color: #aaa;
+  cursor: auto;
+}
+
+main {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-image: url('images/Fundo.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 20px 50px;
+}
+
+header {
+  border: 4px solid #CA585D;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2em;
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  margin: 0 0 30px;
+  border-radius: 5px;
+  color: #CA585D;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  aspect-ratio: 3/4;
+  width: 100%;
+  border-radius: 30px;
+  position: relative;
+  transition: all 400ms ease;
+  transform-style: preserve-3d;
+  transform: rotateY(0deg);
+  background-color: #EFCBDA;
+  cursor: pointer;
+  
+}
+
+.face {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  border: 3px solid #CA585D;
+  border-radius: 20px;
+  backface-visibility: hidden;
+}
+
+.front {
+  transform: rotateY(180deg);
+}
+
+.back {
+  background-image: url('img/Grammy-Atras.jpg');
+}
+
+.reveal-card {
+  transform: rotateY(180deg);
+}
+
+.disabled-card {
+  filter: saturate(0);
+  opacity: 0.5;
+}
