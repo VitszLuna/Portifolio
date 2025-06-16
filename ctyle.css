@@ -74,7 +74,7 @@ body {
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-  background-image: url('img/inicial.png'); 
+  background-image: url('inicial.png'); 
   background-size: cover;
   background-position: center;
 }
@@ -200,7 +200,7 @@ header {
 }
 
 .back {
-  background-image: url('img/Grammy-Atras.jpg');
+  background-image: url('Grammy-Atras.jpg');
 }
 
 .reveal-card {
