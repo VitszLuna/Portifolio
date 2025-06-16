@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const front = createElement('div', 'face front');
       const back = createElement('div', 'face back');
     
-      front.style.backgroundImage = `url(img/${character}.png)`; // a imagem fica oculta no início
+      front.style.backgroundImage = `url(${character}.png)`; // a imagem fica oculta no início
     
       card.appendChild(front);
       card.appendChild(back);
